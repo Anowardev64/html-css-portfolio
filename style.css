@@ -1,0 +1,301 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Inter",sans-serif;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+
+}
+:root{
+    /* Bg & text color */
+
+    --bg-color: #191919;
+    --second-bg-color: #111111ce;
+    --main-color:#C70039 ;
+    --text-color:#fff ;
+    --second-text-color: #f0f3f4;
+    --other-color: #3b3737c0;
+
+   /* font size */
+   --h1-font:7rem;
+   --h2-font:3.5rem;
+   --p-font:1.1rem;
+}
+body{
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+.logo img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    
+}    
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    position: fixed;
+    top: 0;
+    right: 0;
+
+}
+.nav ul li{
+    display: inline-block;
+    padding-left: 25px;
+
+}
+.nav ul li a{
+    color: var(--text-color);
+    font-size: 22px;
+    transition: all ease 0.50s;
+}
+.nav ul li a:hover{
+    color: var(--main-color);
+}
+section{
+    padding: 100px 15%;
+
+    /* ...hero section... */
+}
+.hero{
+    background-image: url(./image/hero\ banner.png);
+    width: 100%;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+.hero-text{
+   margin-top: 40px;
+   margin-bottom: 40px;
+   margin-left: 220px;
+}
+.hero-text h3{
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+.hero-text h1{
+    font-size: var(--h1-font);
+    color: var(--text-color);
+    letter-spacing: 4px;
+}
+.hero-text h4{
+    font-size: 30px;
+    word-spacing: 10px;
+}
+.button{
+    padding: 15px 45px;
+    border: 2px solid var(--main-color);
+    background-color: var(--main-color);
+    display: inline-block;margin-top: 16px;
+    color: var(--text-color);
+    border-radius: 5px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    transition: all ease .50s;
+    margin-top: 15px;
+}
+.button:hover{
+    background-color: transparent;
+    border: 2px solid rgb(80, 246, 229);
+    transform: translateX(5px);
+    color: var(--main-color);
+}
+/* ....about section... */
+
+.about-img img{
+    width: 100%;
+   
+}
+.about{
+    display:flex;
+    gap: 40px;
+    align-items: center;
+}
+.about-text h3{
+    font-size: var(--h2-font);
+    font-family:"Dosis",sans-serif;
+
+}
+.abou-text h4{
+    font-size: 40px;
+}
+span{
+    color: var(--main-color);
+}
+.about-text p{
+    font-size:var(--p-font);
+    margin-top: 15px;
+    line-height: 28px;}
+ 
+    /* ...service section... */
+
+.service{
+        background-color: var(--second-bg-color);
+    }
+.service-h{
+    text-align: center;
+
+}
+.service-h h2{
+    font-size: var(--h2-font);
+    font-family: "dosis",sans-serif;
+}
+.service-h h4{
+    font-size: 22px;
+    margin-top: 5px;
+    word-spacing: 2px;
+}
+.service-box{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 25px;
+}
+.service-item{
+    padding: 25px;
+    border-radius: 10px;
+background-color: var(--other-color);
+}
+.service-item i{
+    font-size: 40px;
+    color:var(--main-color);
+
+}
+.service-item h3{
+    margin-top: 5px;
+    font-size: 22px;
+    word-spacing: 3px;
+}
+.service-item p{
+    margin-top: 3px;
+    font-size: var(--second-text-color);
+    line-height: 26px;
+}
+.service-item a:hover{
+    color:var(--main-color);
+    border: 2px solid turquoise;
+    padding: 4px;
+    transform: translateX(5px);
+    background-color: transparent;
+}
+.service-item a{
+    padding: 8px;;
+    transition: all ease .50S;
+}
+
+
+/* ...contact section... */
+
+.contact{
+    width: 100%;
+    height: 450px;
+    background-color: var(--other-color);
+    display: flex;
+    justify-content: center;}
+    
+    
+       
+.parent{
+    display:flex;
+    justify-content:center;
+    padding:20px 10%;
+    justify-items: center;
+    /* margin-right: 20px; */
+    gap: 20px;
+
+}
+
+}
+.contact-item i{
+   font-size: 120px;
+   color: var(--main-color);
+   margin-bottom: 8px;
+}
+
+.contact-item h4{
+    font-size: 22px;
+    margin-top: 5px;
+    color: var(--text-color);
+    /* margin-left: 25px; */
+    justify-content: center;
+}
+
+
+.abcd h2{
+    font-size: var(--h2-font);
+    color: var(--text-color);
+    font-family: "Dosis",sans-serif;
+    margin-bottom: 20px;
+   
+
+}
+.abcd .button-1{
+    margin: 20px 10px;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    margin-left: 0px;
+    transition: all ease .50s;
+}
+.abcd p{
+   
+    
+
+    font-size: var(--p-font);
+    color: var(--second-text-color);
+    padding-top: 10px;
+    margin-top: 10px;
+    line-height: 28px
+}
+.abcd .button-1:hover{
+    background-color: transparent;
+    color: turquoise;
+    transform: translateX(5px);
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: var(--other-color);
+    height: 150px;
+    
+   
+
+}
+.footer-logo i{
+    font-size: 50px;
+    color: var(--main-color);
+    
+}
+.footer-heading{
+    bottom: 10px;
+    
+}
+
+
+.footer-heading h6{
+    
+    color: var(--second-text-color);
+    padding-top: 10px;
+   
+   
+
+    
+} 
+.footer-logo{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.footer-heading h3{
+    padding-left: 50px;
+    padding-top: 0;
+}
